@@ -103,7 +103,7 @@ h6 {
 .books__description {
   padding-bottom: 4rem;
   color: #fcfcfc;
-  background: black url('../images/mini-book-layout-example/background.jpg') bottom center no-repeat;
+  background: black url('images/background.jpg') bottom center no-repeat;
 }
 
 @media screen and (min-width: 64em) {
