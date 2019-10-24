@@ -1,0 +1,188 @@
+*,
+* + * {
+  box-sizing: border-box
+}
+
+body,
+html {
+  font-size: 20px
+}
+
+@media screen and (min-width: 40em) {
+  body,
+  html {
+    font-size: 24px
+  }
+}
+
+@media screen and (min-width: 60em) {
+  body,
+  html {
+    font-size: 30px
+  }
+}
+
+h1 {
+  font-size: 3.5rem
+}
+
+h2 {
+  font-size: 3rem
+}
+
+h3 {
+  font-size: 2.5rem
+}
+
+h4 {
+  font-size: 2rem
+}
+
+h5 {
+  font-size: 1.5rem
+}
+
+h6 {
+  font-size: 1rem
+}
+
+body {
+  margin: 0;
+  font: normal normal normal 1rem/1.5 Palatino Linotype, Palatino, Palladio, URW Palladio L, Book Antiqua, Baskerville, Bookman Old Style, Bitstream Charter, Nimbus Roman No9 L, Garamond, Apple Garamond, ITC Garamond Narrow, New Century Schoolbook, Century Schoolbook, Century Schoolbook L, Georgia, serif
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 .5rem;
+  line-height: 1.15
+}
+
+.books {
+  background-color: #fff;
+  color: #111
+}
+
+.books__header__figure {
+  margin: 0;
+  background-color: #000;
+  text-align: center;
+}
+
+.books__header__title {
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 1rem 0 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #fcfcfc;
+}
+
+@media screen and (min-width: 40em) {
+  .books__header__title {
+    font-size: 1.75rem;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .books__header__title {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .books__header__title {
+    font-size: 2.5rem;
+  }
+}
+
+.books__description {
+  padding-bottom: 4rem;
+  color: #fcfcfc;
+  background: black url('images/background.jpg') bottom center no-repeat;
+}
+
+@media screen and (min-width: 64em) {
+  .books__description {
+    padding-bottom: 8rem;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .books__description__wrapper {
+    columns: 2;
+  }
+}
+
+.books__description__content {
+  margin: 0;
+}
+
+@media screen and (max-width: 60em) {
+  .books__description__content {
+    margin-bottom: 2rem;
+  }
+}
+
+.books__main {
+}
+
+.books__description__wrapper,
+.books__chapters {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.books__chapters__title {
+  margin-bottom: 3rem;
+  font-weight: normal;
+  text-align: center;
+}
+
+.books__chapter {
+  display: grid;
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 60em) {
+  .books__chapter {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 1rem;
+    grid-auto-flow: row dense;
+    margin: 0 0 3rem;
+  }
+
+  .books__chapters__title {
+    grid-column: span 3;
+  }
+
+  .books__chapter__image {
+    grid-column: span 2;
+  }
+
+  .books__chapter__description {
+    grid-column: span 3;
+  }
+
+  .books__chapter__image,
+  .books__chapter__description {
+    align-self: center
+  }
+
+  .books__chapter:nth-child(2n+1) .books__chapter__image {
+    grid-column: 4 / span 2;
+  }
+
+  .books__chapter:nth-child(2n+1) .books__chapter__description {
+    grid-column: 1 / span 3;
+  }
+
+  .books__chapter__description__content {
+    margin: 0;
+  }
+}
